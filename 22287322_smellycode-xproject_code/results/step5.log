@@ -1,0 +1,12 @@
+RF GC {'random_raw': 0.605, 'random_clean': 0.618, 'grouped_cv': 0.573, 'prevalence_raw': 0.04, 'prevalence_clean': 0.046}
+RF DC {'random_raw': 0.327, 'random_clean': 0.379, 'grouped_cv': 0.252, 'prevalence_raw': 0.031, 'prevalence_clean': 0.036}
+RF LM {'random_raw': 0.18, 'random_clean': 0.017, 'grouped_cv': 0.03, 'prevalence_raw': 0.017, 'prevalence_clean': 0.005}
+RF FE {'random_raw': 0.208, 'random_clean': 0.09, 'grouped_cv': 0.022, 'prevalence_raw': 0.021, 'prevalence_clean': 0.008}
+LR GC {'random_raw': 0.49, 'random_clean': 0.489, 'grouped_cv': 0.497, 'prevalence_raw': 0.04, 'prevalence_clean': 0.046}
+LR DC {'random_raw': 0.147, 'random_clean': 0.157, 'grouped_cv': 0.156, 'prevalence_raw': 0.031, 'prevalence_clean': 0.036}
+LR LM {'random_raw': 0.069, 'random_clean': 0.012, 'grouped_cv': 0.012, 'prevalence_raw': 0.017, 'prevalence_clean': 0.005}
+LR FE {'random_raw': 0.078, 'random_clean': 0.024, 'grouped_cv': 0.025, 'prevalence_raw': 0.021, 'prevalence_clean': 0.008}
+XGB GC {'random_raw': 0.593, 'random_clean': 0.606, 'grouped_cv': 0.554, 'prevalence_raw': 0.04, 'prevalence_clean': 0.046}
+XGB DC {'random_raw': 0.298, 'random_clean': 0.344, 'grouped_cv': 0.255, 'prevalence_raw': 0.031, 'prevalence_clean': 0.036}
+XGB LM {'random_raw': 0.165, 'random_clean': 0.018, 'grouped_cv': 0.03, 'prevalence_raw': 0.017, 'prevalence_clean': 0.005}
+XGB FE {'random_raw': 0.211, 'random_clean': 0.08, 'grouped_cv': 0.023, 'prevalence_raw': 0.021, 'prevalence_clean': 0.008}

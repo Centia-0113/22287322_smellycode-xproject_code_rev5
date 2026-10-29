@@ -1,0 +1,86 @@
+{
+ "RF-GC": {
+  "random_raw": 0.6050503854444428,
+  "random_clean": 0.6178130289012181,
+  "grouped_cv": 0.5734960781624109,
+  "prevalence_raw": 0.0399755557605387,
+  "prevalence_clean": 0.046017226413834544
+ },
+ "RF-DC": {
+  "random_raw": 0.3267917901639522,
+  "random_clean": 0.3790977075452438,
+  "grouped_cv": 0.25217805353982414,
+  "prevalence_raw": 0.03129323863112259,
+  "prevalence_clean": 0.0358282700140215
+ },
+ "RF-LM": {
+  "random_raw": 0.1802510685957965,
+  "random_clean": 0.01671056800059804,
+  "grouped_cv": 0.029952068457673488,
+  "prevalence_raw": 0.016799649478830368,
+  "prevalence_clean": 0.00530146224210456
+ },
+ "RF-FE": {
+  "random_raw": 0.20755937882441308,
+  "random_clean": 0.09045077194825074,
+  "grouped_cv": 0.02182878444944509,
+  "prevalence_raw": 0.020996679273129783,
+  "prevalence_clean": 0.007998931695266075
+ },
+ "LR-GC": {
+  "random_raw": 0.49018816788665864,
+  "random_clean": 0.4889946353204693,
+  "grouped_cv": 0.4971462889890679,
+  "prevalence_raw": 0.0399755557605387,
+  "prevalence_clean": 0.046017226413834544
+ },
+ "LR-DC": {
+  "random_raw": 0.14660406672633983,
+  "random_clean": 0.15737826988863698,
+  "grouped_cv": 0.15588248231733592,
+  "prevalence_raw": 0.03129323863112259,
+  "prevalence_clean": 0.0358282700140215
+ },
+ "LR-LM": {
+  "random_raw": 0.06892822380230752,
+  "random_clean": 0.011693182388754518,
+  "grouped_cv": 0.01234283963609459,
+  "prevalence_raw": 0.016799649478830368,
+  "prevalence_clean": 0.00530146224210456
+ },
+ "LR-FE": {
+  "random_raw": 0.07808442344277414,
+  "random_clean": 0.02372322182846843,
+  "grouped_cv": 0.025168908639793434,
+  "prevalence_raw": 0.020996679273129783,
+  "prevalence_clean": 0.007998931695266075
+ },
+ "XGB-GC": {
+  "random_raw": 0.5930204116140939,
+  "random_clean": 0.6058714257938214,
+  "grouped_cv": 0.5540560399674833,
+  "prevalence_raw": 0.0399755557605387,
+  "prevalence_clean": 0.046017226413834544
+ },
+ "XGB-DC": {
+  "random_raw": 0.29839204545410086,
+  "random_clean": 0.34398331818042993,
+  "grouped_cv": 0.2552186955431163,
+  "prevalence_raw": 0.03129323863112259,
+  "prevalence_clean": 0.0358282700140215
+ },
+ "XGB-LM": {
+  "random_raw": 0.1645890259620251,
+  "random_clean": 0.017695662901854255,
+  "grouped_cv": 0.029550277457868073,
+  "prevalence_raw": 0.016799649478830368,
+  "prevalence_clean": 0.00530146224210456
+ },
+ "XGB-FE": {
+  "random_raw": 0.21141934720203723,
+  "random_clean": 0.07994781356240797,
+  "grouped_cv": 0.022584359019079462,
+  "prevalence_raw": 0.020996679273129783,
+  "prevalence_clean": 0.007998931695266075
+ }
+}

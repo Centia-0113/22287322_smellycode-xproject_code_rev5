@@ -1,0 +1,12 @@
+class-level 68738 (73.2%), method-level 25105 (26.8%)
+GC positives: class-level 4307, method-level 0
+DC positives: class-level 3243, method-level 0
+LM positives: class-level 0, method-level 480
+FE positives: class-level 0, method-level 730
+method-level samples without "(" (not a method signature): 2
+median Logical Lines: class-level 22, method-level 2
+   Partition  Class-level          GC          DC  Method-level         LM         FE
+Full dataset        68738 4307 (6.27) 3243 (4.72)         25105 480 (1.91) 730 (2.91)
+    Training        55183 3446 (6.24) 2683 (4.86)         19702 397 (2.02) 599 (3.04)
+        Test        13555  861 (6.35)  560 (4.13)          5403  83 (1.54) 131 (2.42)
+median Logical Lines of Long Method samples 30; smell-free class-level samples at least that long: 37.1%

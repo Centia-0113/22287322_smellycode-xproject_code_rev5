@@ -1,0 +1,36 @@
+{
+ "raw_rows": 107554,
+ "raw_projects": 89,
+ "raw_labels": {
+  "God class": 4333,
+  "Data class": 3284,
+  "Long method": 1566,
+  "Feature envy": 1996
+ },
+ "missing_or_invalid_values": 0,
+ "halstead_identity_violations": 0,
+ "implausible_zero_logical_lines": 1,
+ "conflicting_label_strings": 391,
+ "conflicting_label_rows": 4907,
+ "within_project_duplicate_rows": 8357,
+ "cross_project_identical_strings": 280,
+ "duplicate_rows_removed": 8803,
+ "clean_rows": 93843,
+ "clean_labels": {
+  "God class": 4307,
+  "Data class": 3243,
+  "Long method": 480,
+  "Feature envy": 730
+ },
+ "near_dup_pairs": 183,
+ "near_dup_project_pairs": 75,
+ "max_pair_overlap": 0.028634361233480177,
+ "max_pair": [
+  "lucene",
+  "opennlp"
+ ],
+ "link_threshold": 0.1,
+ "groups": 89,
+ "merged_projects": 0,
+ "samples_with_cross_project_near_dups": 233
+}

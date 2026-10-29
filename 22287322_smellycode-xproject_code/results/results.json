@@ -1,0 +1,1063 @@
+{
+ "validation": {
+  "RF": {
+   "macroF1_mean": 0.26330514283140843,
+   "macroF1_sd": 0.026260833596725094,
+   "macroAP_mean": 0.23460372929079815,
+   "macroAP_sd": 0.03167652736665481,
+   "perSmellF1": {
+    "GC": 0.595,
+    "DC": 0.324,
+    "LM": 0.075,
+    "FE": 0.06
+   },
+   "perSmellAP": {
+    "GC": 0.618,
+    "DC": 0.258,
+    "LM": 0.037,
+    "FE": 0.025
+   },
+   "settings": {
+    "GC": {
+     "params": {
+      "max_depth": 20,
+      "min_samples_leaf": 5
+     },
+     "weighted": true,
+     "thr": 0.738
+    },
+    "DC": {
+     "params": {
+      "max_depth": 20,
+      "min_samples_leaf": 5
+     },
+     "weighted": false,
+     "thr": 0.148
+    },
+    "LM": {
+     "params": {
+      "max_depth": 20,
+      "min_samples_leaf": 5
+     },
+     "weighted": false,
+     "thr": 0.052
+    },
+    "FE": {
+     "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+     },
+     "weighted": false,
+     "thr": 0.045
+    }
+   }
+  },
+  "LR": {
+   "macroF1_mean": 0.23730104772689414,
+   "macroF1_sd": 0.03342484492236134,
+   "macroAP_mean": 0.19438662862100364,
+   "macroAP_sd": 0.04560231716499835,
+   "perSmellF1": {
+    "GC": 0.594,
+    "DC": 0.247,
+    "LM": 0.031,
+    "FE": 0.077
+   },
+   "perSmellAP": {
+    "GC": 0.574,
+    "DC": 0.159,
+    "LM": 0.014,
+    "FE": 0.029
+   },
+   "settings": {
+    "GC": {
+     "params": {
+      "C": 0.01
+     },
+     "weighted": true,
+     "thr": 0.839
+    },
+    "DC": {
+     "params": {
+      "C": 10.0
+     },
+     "weighted": false,
+     "thr": 0.102
+    },
+    "LM": {
+     "params": {
+      "C": 10.0
+     },
+     "weighted": true,
+     "thr": 0.61
+    },
+    "FE": {
+     "params": {
+      "C": 10.0
+     },
+     "weighted": true,
+     "thr": 0.732
+    }
+   }
+  },
+  "XGB": {
+   "macroF1_mean": 0.26728002387971017,
+   "macroF1_sd": 0.033625933486743115,
+   "macroAP_mean": 0.23440765398695226,
+   "macroAP_sd": 0.038930722414496265,
+   "perSmellF1": {
+    "GC": 0.593,
+    "DC": 0.329,
+    "LM": 0.086,
+    "FE": 0.061
+   },
+   "perSmellAP": {
+    "GC": 0.615,
+    "DC": 0.262,
+    "LM": 0.035,
+    "FE": 0.025
+   },
+   "settings": {
+    "GC": {
+     "params": {
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.05
+     },
+     "weighted": true,
+     "thr": 0.901
+    },
+    "DC": {
+     "params": {
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.1
+     },
+     "weighted": false,
+     "thr": 0.187
+    },
+    "LM": {
+     "params": {
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.05
+     },
+     "weighted": true,
+     "thr": 0.865
+    },
+    "FE": {
+     "params": {
+      "n_estimators": 200,
+      "max_depth": 8,
+      "learning_rate": 0.05
+     },
+     "weighted": false,
+     "thr": 0.06
+    }
+   }
+  }
+ },
+ "best_model_by_validation": "XGB",
+ "weighting_delta": {
+  "RF-GC": {
+   "dF1": 0.0005309335994936659,
+   "dAP": -0.001520401277661232
+  },
+  "RF-DC": {
+   "dF1": -0.008376972147930095,
+   "dAP": -0.004629833900783503
+  },
+  "RF-LM": {
+   "dF1": -0.02162052031262921,
+   "dAP": -0.015017373816417032
+  },
+  "RF-FE": {
+   "dF1": -0.010483473732229515,
+   "dAP": -0.005957335158675825
+  },
+  "LR-GC": {
+   "dF1": 0.02263176149814212,
+   "dAP": 0.028360168623954463
+  },
+  "LR-DC": {
+   "dF1": -0.01860745893023496,
+   "dAP": -0.017702729707879252
+  },
+  "LR-LM": {
+   "dF1": 0.0006490709381367247,
+   "dAP": -0.0013572954481515672
+  },
+  "LR-FE": {
+   "dF1": 0.002374461403426352,
+   "dAP": 0.0014821311093811372
+  },
+  "XGB-GC": {
+   "dF1": 0.0033705643704610043,
+   "dAP": -0.0038324141007215927
+  },
+  "XGB-DC": {
+   "dF1": -0.002382191992122906,
+   "dAP": -0.004493431670159931
+  },
+  "XGB-LM": {
+   "dF1": 0.011438282835205524,
+   "dAP": -0.00410544041897185
+  },
+  "XGB-FE": {
+   "dF1": -0.0030474995943380887,
+   "dAP": -0.0025378336285502034
+  }
+ },
+ "test_excluded_near_dups": 51,
+ "test": {
+  "RF": {
+   "per_smell": {
+    "GC": {
+     "P": 0.6313229571984436,
+     "R": 0.7572928821470245,
+     "F1": 0.6885941644562334,
+     "PRAUC": 0.723197314424823
+    },
+    "DC": {
+     "P": 0.1881625441696113,
+     "R": 0.3817204301075269,
+     "F1": 0.25207100591715975,
+     "PRAUC": 0.19375715261438137
+    },
+    "LM": {
+     "P": 0.060790273556231005,
+     "R": 0.24691358024691357,
+     "F1": 0.0975609756097561,
+     "PRAUC": 0.06064482091908201
+    },
+    "FE": {
+     "P": 0.02671118530884808,
+     "R": 0.12213740458015267,
+     "F1": 0.043835616438356165,
+     "PRAUC": 0.0246061811617109
+    }
+   },
+   "macroF1": 0.2705154406053764,
+   "macroAP": 0.2505513672799993,
+   "microF1": 0.3809119830328738,
+   "CI": {
+    "macroF1": [
+     0.23835238196569686,
+     0.3032583165880978
+    ],
+    "macroAP": [
+     0.22506617993209907,
+     0.28897682858404816
+    ],
+    "F1_GC": [
+     0.5827361357305647,
+     0.7536757918809566
+    ],
+    "F1_DC": [
+     0.1873642739171102,
+     0.3269789004570674
+    ],
+    "F1_LM": [
+     0.06830655394352632,
+     0.13658875131863857
+    ],
+    "F1_FE": [
+     0.03010636903312796,
+     0.06221568818040435
+    ]
+   },
+   "per_project_F1": {
+    "GC": {
+     "n_projects": 18,
+     "median": 0.7344081138359068,
+     "q1": 0.6033333333333333,
+     "q3": 0.8333333333333334
+    },
+    "DC": {
+     "n_projects": 16,
+     "median": 0.19201228878648233,
+     "q1": 0.15677212939921792,
+     "q3": 0.3180921052631579
+    },
+    "LM": {
+     "n_projects": 10,
+     "median": 0.12222222222222222,
+     "q1": 0.07040816326530612,
+     "q3": 0.1565053425518542
+    },
+    "FE": {
+     "n_projects": 12,
+     "median": 0.03943278943278944,
+     "q1": 0.0,
+     "q3": 0.05820340184266478
+    }
+   }
+  },
+  "LR": {
+   "per_smell": {
+    "GC": {
+     "P": 0.6385302879841113,
+     "R": 0.750291715285881,
+     "F1": 0.6899141630901288,
+     "PRAUC": 0.7611139021919632
+    },
+    "DC": {
+     "P": 0.13629032258064516,
+     "R": 0.30286738351254483,
+     "F1": 0.18798665183537264,
+     "PRAUC": 0.10549477989227599
+    },
+    "LM": {
+     "P": 0.012456546929316338,
+     "R": 0.5308641975308642,
+     "F1": 0.024341919048966883,
+     "PRAUC": 0.01373994646380393
+    },
+    "FE": {
+     "P": 0.019580419580419582,
+     "R": 0.10687022900763359,
+     "F1": 0.03309692671394799,
+     "PRAUC": 0.015368823869297946
+    }
+   },
+   "macroF1": 0.23383491517210409,
+   "macroAP": 0.22392936310433526,
+   "microF1": 0.2161422708618331,
+   "CI": {
+    "macroF1": [
+     0.203728358665808,
+     0.2661006371117145
+    ],
+    "macroAP": [
+     0.196109425623934,
+     0.25935812162248234
+    ],
+    "F1_GC": [
+     0.5652978513395872,
+     0.762076785063228
+    ],
+    "F1_DC": [
+     0.11441546139272678,
+     0.29428787720580557
+    ],
+    "F1_LM": [
+     0.015403323734517574,
+     0.0424057173280032
+    ],
+    "F1_FE": [
+     0.012847793882608502,
+     0.05908573194348496
+    ]
+   },
+   "per_project_F1": {
+    "GC": {
+     "n_projects": 18,
+     "median": 0.7609154929577464,
+     "q1": 0.5441729323308271,
+     "q3": 0.8432262461662381
+    },
+    "DC": {
+     "n_projects": 16,
+     "median": 0.16821808510638298,
+     "q1": 0.08288327526132404,
+     "q3": 0.28296703296703296
+    },
+    "LM": {
+     "n_projects": 10,
+     "median": 0.0228912705555101,
+     "q1": 0.017694097121256178,
+     "q3": 0.03192546583850932
+    },
+    "FE": {
+     "n_projects": 12,
+     "median": 0.0,
+     "q1": 0.0,
+     "q3": 0.03213058419243986
+    }
+   }
+  },
+  "XGB": {
+   "per_smell": {
+    "GC": {
+     "P": 0.6767091541135574,
+     "R": 0.6814469078179697,
+     "F1": 0.6790697674418604,
+     "PRAUC": 0.7489918828527217
+    },
+    "DC": {
+     "P": 0.23641304347826086,
+     "R": 0.3118279569892473,
+     "F1": 0.2689335394126739,
+     "PRAUC": 0.18962130439841546
+    },
+    "LM": {
+     "P": 0.044009779951100246,
+     "R": 0.2222222222222222,
+     "F1": 0.07346938775510205,
+     "PRAUC": 0.037346307546657506
+    },
+    "FE": {
+     "P": 0.03773584905660377,
+     "R": 0.061068702290076333,
+     "F1": 0.04664723032069971,
+     "PRAUC": 0.02147745125241727
+    }
+   },
+   "macroF1": 0.26702998123258403,
+   "macroAP": 0.24935923651255298,
+   "microF1": 0.407590330127372,
+   "CI": {
+    "macroF1": [
+     0.23237722731324714,
+     0.3017665877857556
+    ],
+    "macroAP": [
+     0.21564322146465262,
+     0.29235958243554416
+    ],
+    "F1_GC": [
+     0.5619052752365006,
+     0.7567344654815891
+    ],
+    "F1_DC": [
+     0.20864201450625122,
+     0.3415752066564659
+    ],
+    "F1_LM": [
+     0.044516405214317274,
+     0.11321647520980893
+    ],
+    "F1_FE": [
+     0.01565437957291346,
+     0.08372874731287863
+    ]
+   },
+   "per_project_F1": {
+    "GC": {
+     "n_projects": 18,
+     "median": 0.7354312354312355,
+     "q1": 0.5695612980769231,
+     "q3": 0.8586956521739131
+    },
+    "DC": {
+     "n_projects": 16,
+     "median": 0.2264957264957265,
+     "q1": 0.1732339730502246,
+     "q3": 0.35141871165644173
+    },
+    "LM": {
+     "n_projects": 10,
+     "median": 0.06719367588932806,
+     "q1": 0.03819444444444444,
+     "q3": 0.13214285714285715
+    },
+    "FE": {
+     "n_projects": 12,
+     "median": 0.0,
+     "q1": 0.0,
+     "q3": 0.0875
+    }
+   }
+  }
+ },
+ "cooccurrence": {
+  "GC-DC": {
+   "n11": 107,
+   "P(DC|GC)": 0.024843278384026005,
+   "P(GC|DC)": 0.03299414122725871,
+   "phi": -0.011664622483532665
+  },
+  "GC-LM": {
+   "n11": 0,
+   "P(LM|GC)": 0.0,
+   "P(GC|LM)": 0.0,
+   "phi": -0.01572612818028834
+  },
+  "GC-FE": {
+   "n11": 0,
+   "P(FE|GC)": 0.0,
+   "P(GC|FE)": 0.0,
+   "phi": -0.019419804879412823
+  },
+  "DC-LM": {
+   "n11": 0,
+   "P(LM|DC)": 0.0,
+   "P(DC|LM)": 0.0,
+   "phi": -0.013565712071315128
+  },
+  "DC-FE": {
+   "n11": 0,
+   "P(FE|DC)": 0.0,
+   "P(DC|FE)": 0.0,
+   "phi": -0.01675196071499938
+  },
+  "LM-FE": {
+   "n11": 282,
+   "P(FE|LM)": 0.5875,
+   "P(LM|FE)": 0.3863013698630137,
+   "phi": 0.47313773113969193
+  }
+ },
+ "stratified_recall": {
+  "RF-GC": {
+   "n_alone": 833,
+   "recall_alone": 0.773109243697479,
+   "n_co": 24,
+   "recall_co": 0.20833333333333334
+  },
+  "RF-DC": {
+   "n_alone": 534,
+   "recall_alone": 0.3970037453183521,
+   "n_co": 24,
+   "recall_co": 0.041666666666666664
+  },
+  "RF-LM": {
+   "n_alone": 31,
+   "recall_alone": 0.3225806451612903,
+   "n_co": 50,
+   "recall_co": 0.2
+  },
+  "RF-FE": {
+   "n_alone": 81,
+   "recall_alone": 0.08641975308641975,
+   "n_co": 50,
+   "recall_co": 0.18
+  },
+  "LR-GC": {
+   "n_alone": 833,
+   "recall_alone": 0.7635054021608644,
+   "n_co": 24,
+   "recall_co": 0.2916666666666667
+  },
+  "LR-DC": {
+   "n_alone": 534,
+   "recall_alone": 0.2958801498127341,
+   "n_co": 24,
+   "recall_co": 0.4583333333333333
+  },
+  "LR-LM": {
+   "n_alone": 31,
+   "recall_alone": 0.5161290322580645,
+   "n_co": 50,
+   "recall_co": 0.54
+  },
+  "LR-FE": {
+   "n_alone": 81,
+   "recall_alone": 0.13580246913580246,
+   "n_co": 50,
+   "recall_co": 0.06
+  },
+  "XGB-GC": {
+   "n_alone": 833,
+   "recall_alone": 0.6998799519807923,
+   "n_co": 24,
+   "recall_co": 0.041666666666666664
+  },
+  "XGB-DC": {
+   "n_alone": 534,
+   "recall_alone": 0.32397003745318353,
+   "n_co": 24,
+   "recall_co": 0.041666666666666664
+  },
+  "XGB-LM": {
+   "n_alone": 31,
+   "recall_alone": 0.25806451612903225,
+   "n_co": 50,
+   "recall_co": 0.2
+  },
+  "XGB-FE": {
+   "n_alone": 81,
+   "recall_alone": 0.06172839506172839,
+   "n_co": 50,
+   "recall_co": 0.06
+  }
+ },
+ "clusters": {
+  "Size/operands": [
+   "Logical Lines",
+   "Distinct Operands",
+   "Total Operands",
+   "Vocabulary",
+   "Length",
+   "Calculated Length",
+   "Volume",
+   "Bugs"
+  ],
+  "Distinct operators": [
+   "Distinct Operators"
+  ],
+  "Operator effort": [
+   "Total Operators",
+   "Difficulty",
+   "Effort",
+   "Time Required"
+  ],
+  "Cyclomatic complexity": [
+   "Cyclomatic Complexity"
+  ]
+ },
+ "perm_test": {
+  "RF-GC": {
+   "Size/operands": 0.6369517039122397,
+   "Distinct operators": -0.0012735784569165131,
+   "Operator effort": 0.04682218949504435,
+   "Cyclomatic complexity": 0.011970181553938631
+  },
+  "RF-DC": {
+   "Size/operands": 0.15457725837826747,
+   "Distinct operators": 0.022196115806466986,
+   "Operator effort": 0.0650584683269077,
+   "Cyclomatic complexity": 0.06152775592437805
+  },
+  "RF-LM": {
+   "Size/operands": 0.04493110165479793,
+   "Distinct operators": -0.0012773060305287173,
+   "Operator effort": 0.04551287262132645,
+   "Cyclomatic complexity": 0.0433700512870379
+  },
+  "RF-FE": {
+   "Size/operands": 0.017592124270264943,
+   "Distinct operators": 0.004571758948780321,
+   "Operator effort": 0.01280968347190418,
+   "Cyclomatic complexity": 0.0062580337598484945
+  },
+  "LR-GC": {
+   "Size/operands": 0.7104656429862563,
+   "Distinct operators": 0.012714435622101417,
+   "Operator effort": 0.018325691186075722,
+   "Cyclomatic complexity": 0.0014669913342796105
+  },
+  "LR-DC": {
+   "Size/operands": 0.07622917985427997,
+   "Distinct operators": 0.07659307849629482,
+   "Operator effort": 0.0635696199881268,
+   "Cyclomatic complexity": 0.025349492447507727
+  },
+  "LR-LM": {
+   "Size/operands": 0.0009254653576015199,
+   "Distinct operators": 0.009799421049284862,
+   "Operator effort": 0.006133553686230448,
+   "Cyclomatic complexity": 0.009660973678802243
+  },
+  "LR-FE": {
+   "Size/operands": 0.008336818641631705,
+   "Distinct operators": 0.008572893706545442,
+   "Operator effort": 0.007157173047410831,
+   "Cyclomatic complexity": 0.0033914065067982987
+  },
+  "XGB-GC": {
+   "Size/operands": 0.6869091332957771,
+   "Distinct operators": 0.0016967521970629117,
+   "Operator effort": 0.11559646802043055,
+   "Cyclomatic complexity": 0.016610981515084777
+  },
+  "XGB-DC": {
+   "Size/operands": 0.15287102997851648,
+   "Distinct operators": 0.025667029136267762,
+   "Operator effort": 0.040816349113230836,
+   "Cyclomatic complexity": 0.04703068021818811
+  },
+  "XGB-LM": {
+   "Size/operands": 0.030212731463685794,
+   "Distinct operators": 0.008355422573254005,
+   "Operator effort": 0.01330608029460011,
+   "Cyclomatic complexity": 0.02333463955974852
+  },
+  "XGB-FE": {
+   "Size/operands": 0.01439801954078455,
+   "Distinct operators": -0.0005359138963082286,
+   "Operator effort": 0.009211801146868651,
+   "Cyclomatic complexity": 0.005650702118372948
+  }
+ },
+ "perm_val": {
+  "RF-GC": {
+   "Size/operands": {
+    "mean": 0.5278129844113304,
+    "sd": 0.11911385659507
+   },
+   "Distinct operators": {
+    "mean": 0.007223143384235115,
+    "sd": 0.019387775023107803
+   },
+   "Operator effort": {
+    "mean": 0.0674082958282579,
+    "sd": 0.03781068994585661
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.03611076912675985,
+    "sd": 0.02035103688625007
+   }
+  },
+  "RF-DC": {
+   "Size/operands": {
+    "mean": 0.20628650910289484,
+    "sd": 0.04157100673931017
+   },
+   "Distinct operators": {
+    "mean": 0.03459599958173342,
+    "sd": 0.008238910887059163
+   },
+   "Operator effort": {
+    "mean": 0.09329567325564787,
+    "sd": 0.02507386584683024
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.058037142809993156,
+    "sd": 0.018927613318551705
+   }
+  },
+  "RF-LM": {
+   "Size/operands": {
+    "mean": 0.02656182944542242,
+    "sd": 0.017704045202659478
+   },
+   "Distinct operators": {
+    "mean": 0.0002991952159822141,
+    "sd": 0.0013676097417994017
+   },
+   "Operator effort": {
+    "mean": 0.023036190702270816,
+    "sd": 0.016139323478788548
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.02566584888890831,
+    "sd": 0.015656320919913393
+   }
+  },
+  "RF-FE": {
+   "Size/operands": {
+    "mean": 0.015280456695301276,
+    "sd": 0.007042392700492416
+   },
+   "Distinct operators": {
+    "mean": 0.007429958827795631,
+    "sd": 0.0033498363300703657
+   },
+   "Operator effort": {
+    "mean": 0.015160895780212198,
+    "sd": 0.006853924862511055
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.006552818737423928,
+    "sd": 0.003541909334269371
+   }
+  },
+  "LR-GC": {
+   "Size/operands": {
+    "mean": 0.5207350605134066,
+    "sd": 0.16845981609934385
+   },
+   "Distinct operators": {
+    "mean": 0.013407455019436177,
+    "sd": 0.002555042822448053
+   },
+   "Operator effort": {
+    "mean": 0.014701182835416405,
+    "sd": 0.007465408421239459
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.0038804708001178765,
+    "sd": 0.002833447387784273
+   }
+  },
+  "LR-DC": {
+   "Size/operands": {
+    "mean": 0.12341061868694958,
+    "sd": 0.00409956818304776
+   },
+   "Distinct operators": {
+    "mean": 0.11976196433851956,
+    "sd": 0.003916391789678276
+   },
+   "Operator effort": {
+    "mean": 0.10733549107605385,
+    "sd": 0.009136210600511015
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.043083555165244994,
+    "sd": 0.009381973729931678
+   }
+  },
+  "LR-LM": {
+   "Size/operands": {
+    "mean": 0.0019199617357783597,
+    "sd": 0.002113921044842622
+   },
+   "Distinct operators": {
+    "mean": 0.006236421796687123,
+    "sd": 0.0033634063582182157
+   },
+   "Operator effort": {
+    "mean": 0.0052683873246505124,
+    "sd": 0.004057404650664527
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.008616844340243806,
+    "sd": 0.004254570060928768
+   }
+  },
+  "LR-FE": {
+   "Size/operands": {
+    "mean": 0.020585007317738647,
+    "sd": 0.010284870963007614
+   },
+   "Distinct operators": {
+    "mean": 0.017472655216169326,
+    "sd": 0.010323637612854089
+   },
+   "Operator effort": {
+    "mean": 0.020430429933915886,
+    "sd": 0.008958651548702967
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.01284820055610721,
+    "sd": 0.00760884601171448
+   }
+  },
+  "XGB-GC": {
+   "Size/operands": {
+    "mean": 0.5585770983559062,
+    "sd": 0.14752198869101574
+   },
+   "Distinct operators": {
+    "mean": -0.0023881130967005723,
+    "sd": 0.03614354031447201
+   },
+   "Operator effort": {
+    "mean": 0.08687588166983082,
+    "sd": 0.02581302873843245
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.053187643584119614,
+    "sd": 0.03928690799624004
+   }
+  },
+  "XGB-DC": {
+   "Size/operands": {
+    "mean": 0.21706096445539663,
+    "sd": 0.03836708059358573
+   },
+   "Distinct operators": {
+    "mean": 0.030023490537263713,
+    "sd": 0.00821779740087678
+   },
+   "Operator effort": {
+    "mean": 0.08101920643999062,
+    "sd": 0.020140570329962505
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.055002887772247454,
+    "sd": 0.024184552122144792
+   }
+  },
+  "XGB-LM": {
+   "Size/operands": {
+    "mean": 0.024659102946745552,
+    "sd": 0.017552331547926264
+   },
+   "Distinct operators": {
+    "mean": 0.0015024609731929509,
+    "sd": 0.0031465634873614062
+   },
+   "Operator effort": {
+    "mean": 0.007580253443030982,
+    "sd": 0.009584092901735963
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.022611878263386242,
+    "sd": 0.013508474268488098
+   }
+  },
+  "XGB-FE": {
+   "Size/operands": {
+    "mean": 0.015284797160427332,
+    "sd": 0.0067398994167839205
+   },
+   "Distinct operators": {
+    "mean": 0.0024176451056866924,
+    "sd": 0.0010600443803696264
+   },
+   "Operator effort": {
+    "mean": 0.00981619179109559,
+    "sd": 0.006937438016092981
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.006171462348742512,
+    "sd": 0.0039805583592964185
+   }
+  }
+ },
+ "specific": {
+  "RF-GC": {
+   "Size/operands": 0.63497537626741,
+   "Distinct operators": 0.010777642444338905,
+   "Operator effort": 0.31206770259071237,
+   "Cyclomatic complexity": 0.042179278697538757
+  },
+  "RF-DC": {
+   "Size/operands": 0.4599359610126914,
+   "Distinct operators": 0.0506564236339827,
+   "Operator effort": 0.4061830994767862,
+   "Cyclomatic complexity": 0.08322451587653969
+  },
+  "RF-LM": {
+   "Size/operands": 0.3872054367002715,
+   "Distinct operators": 0.0414714281361184,
+   "Operator effort": 0.45156980197475727,
+   "Cyclomatic complexity": 0.11975333318885284
+  },
+  "RF-FE": {
+   "Size/operands": 0.4199545443967579,
+   "Distinct operators": 0.040173136160212064,
+   "Operator effort": 0.45722112988944447,
+   "Cyclomatic complexity": 0.08265118955358565
+  },
+  "LR-GC": {
+   "Size/operands": 3.574355394830795,
+   "Distinct operators": 0.3415050994581138,
+   "Operator effort": 0.35502426570849743,
+   "Cyclomatic complexity": 0.11155762555602812
+  },
+  "LR-DC": {
+   "Size/operands": 18.047779262910165,
+   "Distinct operators": 5.047325898736938,
+   "Operator effort": 12.453997668893152,
+   "Cyclomatic complexity": 0.4860373849163747
+  },
+  "LR-LM": {
+   "Size/operands": 6.551203804908473,
+   "Distinct operators": 2.118379512455672,
+   "Operator effort": 3.600328832515892,
+   "Cyclomatic complexity": 1.2847019932521637
+  },
+  "LR-FE": {
+   "Size/operands": 16.441732191109743,
+   "Distinct operators": 3.8052236035680447,
+   "Operator effort": 6.768693641451923,
+   "Cyclomatic complexity": 0.7182338767877475
+  },
+  "XGB-GC": {
+   "Size/operands": 1434113.9619140625,
+   "Distinct operators": 6557.92431640625,
+   "Operator effort": 28954.93701171875,
+   "Cyclomatic complexity": 14758.046875
+  },
+  "XGB-DC": {
+   "Size/operands": 33477.3994140625,
+   "Distinct operators": 2258.311767578125,
+   "Operator effort": 6499.7335205078125,
+   "Cyclomatic complexity": 3739.14208984375
+  },
+  "XGB-LM": {
+   "Size/operands": 391080.234375,
+   "Distinct operators": 34547.13671875,
+   "Operator effort": 170598.58203125,
+   "Cyclomatic complexity": 450187.84375
+  },
+  "XGB-FE": {
+   "Size/operands": 14921.47509765625,
+   "Distinct operators": 952.197998046875,
+   "Operator effort": 9612.493041992188,
+   "Cyclomatic complexity": 3178.677001953125
+  }
+ },
+ "rank_agreement": {
+  "RF-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-DC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-LM": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Operator effort",
+   "top_specific": "Operator effort"
+  },
+  "RF-FE": {
+   "spearman": 0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Size/operands",
+   "top_specific": "Operator effort"
+  },
+  "LR-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "LR-DC": {
+   "spearman": 0.39999999999999997,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "LR-LM": {
+   "spearman": -0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "LR-FE": {
+   "spearman": 0.39999999999999997,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "XGB-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-DC": {
+   "spearman": 0.7999999999999999,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-LM": {
+   "spearman": 0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Size/operands",
+   "top_specific": "Cyclomatic complexity"
+  },
+  "XGB-FE": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  }
+ },
+ "cross_model_perm_rho": {
+  "GC RF-XGB": 1.0,
+  "GC RF-LR": 0.7999999999999999,
+  "GC XGB-LR": 0.7999999999999999,
+  "DC RF-XGB": 0.7999999999999999,
+  "DC RF-LR": -0.19999999999999998,
+  "DC XGB-LR": -0.39999999999999997,
+  "LM RF-XGB": 0.39999999999999997,
+  "LM RF-LR": -0.7999999999999999,
+  "LM XGB-LR": -0.7999999999999999,
+  "FE RF-XGB": 1.0,
+  "FE RF-LR": -0.19999999999999998,
+  "FE XGB-LR": -0.19999999999999998
+ },
+ "kept_features_final": [
+  "Logical Lines",
+  "Distinct Operators",
+  "Distinct Operands",
+  "Total Operators",
+  "Total Operands",
+  "Difficulty",
+  "Effort",
+  "Cyclomatic Complexity"
+ ]
+}

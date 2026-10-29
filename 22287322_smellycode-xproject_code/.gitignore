@@ -1,0 +1,6 @@
+data/*.csv
+work/
+__pycache__/
+*.py[cod]
+.venv/
+venv/

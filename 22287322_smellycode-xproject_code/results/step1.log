@@ -1,0 +1,56 @@
+{
+ "raw_rows": 107554,
+ "raw_projects": 89,
+ "raw_labels": {
+  "God class": 4333,
+  "Data class": 3284,
+  "Long method": 1566,
+  "Feature envy": 1996
+ },
+ "missing_or_invalid_values": 0,
+ "halstead_identity_violations": 0,
+ "implausible_zero_logical_lines": 1,
+ "conflicting_label_strings": 391,
+ "conflicting_label_rows": 4907,
+ "within_project_duplicate_rows": 8357,
+ "cross_project_identical_strings": 280,
+ "duplicate_rows_removed": 8803,
+ "clean_rows": 93843,
+ "clean_labels": {
+  "God class": 4307,
+  "Data class": 3243,
+  "Long method": 480,
+  "Feature envy": 730
+ }
+}
+minhash built for 73294 non-trivial samples in 104s
+cross-project near-duplicate pairs: 183
+               a                b  samples_a  samples_b  max_frac
+          lucene          opennlp         13         13  0.028634
+   commons-codec commons-compress          2          2  0.025316
+        activemq         qpid-jms          6          6  0.020619
+      commons-io           wicket          2          2  0.015038
+   commons-codec            kafka          1          1  0.012658
+   commons-codec           tomcat          1          1  0.012658
+   commons-codec           hadoop          1          1  0.012658
+      bookkeeper           hadoop          4          4  0.009547
+commons-compress           hadoop          2          2  0.009390
+          hadoop              tez          6          6  0.008186
+         calcite            kylin          7          7  0.007447
+         cayenne           lucene          6          5  0.007123
+          hadoop           lucene          3          4  0.005698
+            hive          parquet          2          2  0.005128
+         archiva        continuum          1          2  0.004914
+{
+ "near_dup_pairs": 183,
+ "near_dup_project_pairs": 75,
+ "max_pair_overlap": 0.028634361233480177,
+ "max_pair": [
+  "lucene",
+  "opennlp"
+ ],
+ "groups": 89,
+ "merged_projects": 0,
+ "samples_with_cross_project_near_dups": 233
+}
+done in 106s

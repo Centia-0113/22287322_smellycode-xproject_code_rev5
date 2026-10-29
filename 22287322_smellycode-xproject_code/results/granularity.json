@@ -1,0 +1,33 @@
+{
+ "class_level": 68738,
+ "method_level": 25105,
+ "table": [
+  {
+   "Partition": "Full dataset",
+   "Class-level": 68738,
+   "GC": "4307 (6.27)",
+   "DC": "3243 (4.72)",
+   "Method-level": 25105,
+   "LM": "480 (1.91)",
+   "FE": "730 (2.91)"
+  },
+  {
+   "Partition": "Training",
+   "Class-level": 55183,
+   "GC": "3446 (6.24)",
+   "DC": "2683 (4.86)",
+   "Method-level": 19702,
+   "LM": "397 (2.02)",
+   "FE": "599 (3.04)"
+  },
+  {
+   "Partition": "Test",
+   "Class-level": 13555,
+   "GC": "861 (6.35)",
+   "DC": "560 (4.13)",
+   "Method-level": 5403,
+   "LM": "83 (1.54)",
+   "FE": "131 (2.42)"
+  }
+ ]
+}

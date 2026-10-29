@@ -1,0 +1,25 @@
+{
+ "seed": 42,
+ "test_projects": [
+  "bookkeeper",
+  "cayenne",
+  "cocoon",
+  "commons-compress",
+  "commons-email",
+  "commons-math3",
+  "commons-validator",
+  "crunch",
+  "drill",
+  "flink",
+  "jackrabbit-oak",
+  "jena",
+  "kerby",
+  "manifoldcf",
+  "parquet",
+  "qpid-jms",
+  "ranger",
+  "tez"
+ ],
+ "n_test_groups": 18,
+ "n_train_groups": 71
+}

@@ -1,0 +1,36 @@
+                       Logical Lines  Distinct Operators  Distinct Operands  Total Operators  Total Operands  Vocabulary  Length  Calculated Length  Volume  Difficulty  Effort  Time Required  Bugs  Cyclomatic Complexity
+Logical Lines                   1.00                0.81               0.94             0.91            0.97        0.94    0.97               0.94    0.96        0.89    0.95           0.95  0.96                   0.81
+Distinct Operators              0.81                1.00               0.83             0.93            0.82        0.86    0.85               0.84    0.85        0.96    0.92           0.92  0.85                   0.77
+Distinct Operands               0.94                0.83               1.00             0.91            0.98        1.00    0.98               1.00    0.98        0.87    0.94           0.94  0.98                   0.82
+Total Operators                 0.91                0.93               0.91             1.00            0.92        0.92    0.95               0.91    0.94        0.96    0.98           0.98  0.94                   0.82
+Total Operands                  0.97                0.82               0.98             0.92            1.00        0.98    1.00               0.98    1.00        0.90    0.96           0.96  1.00                   0.82
+Vocabulary                      0.94                0.86               1.00             0.92            0.98        1.00    0.98               1.00    0.99        0.89    0.95           0.95  0.99                   0.83
+Length                          0.97                0.85               0.98             0.95            1.00        0.98    1.00               0.98    1.00        0.92    0.98           0.98  1.00                   0.82
+Calculated Length               0.94                0.84               1.00             0.91            0.98        1.00    0.98               1.00    0.98        0.88    0.95           0.95  0.98                   0.82
+Volume                          0.96                0.85               0.98             0.94            1.00        0.99    1.00               0.98    1.00        0.92    0.97           0.97  1.00                   0.83
+Difficulty                      0.89                0.96               0.87             0.96            0.90        0.89    0.92               0.88    0.92        1.00    0.98           0.98  0.92                   0.80
+Effort                          0.95                0.92               0.94             0.98            0.96        0.95    0.98               0.95    0.97        0.98    1.00           1.00  0.97                   0.83
+Time Required                   0.95                0.92               0.94             0.98            0.96        0.95    0.98               0.95    0.97        0.98    1.00           1.00  0.97                   0.83
+Bugs                            0.96                0.85               0.98             0.94            1.00        0.99    1.00               0.98    1.00        0.92    0.97           0.97  1.00                   0.83
+Cyclomatic Complexity           0.81                0.77               0.82             0.82            0.82        0.83    0.82               0.82    0.83        0.80    0.83           0.83  0.83                   1.00
+
+cut 0.05 (|rho| >= 0.95): 4 clusters
+   ['Logical Lines', 'Distinct Operands', 'Total Operands', 'Vocabulary', 'Length', 'Calculated Length', 'Volume', 'Bugs']
+   ['Distinct Operators']
+   ['Total Operators', 'Difficulty', 'Effort', 'Time Required']
+   ['Cyclomatic Complexity']
+
+cut 0.1 (|rho| >= 0.90): 3 clusters
+   ['Logical Lines', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Vocabulary', 'Length', 'Calculated Length', 'Volume', 'Difficulty', 'Effort', 'Time Required', 'Bugs']
+   ['Distinct Operators']
+   ['Cyclomatic Complexity']
+
+cut 0.15 (|rho| >= 0.85): 2 clusters
+   ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Vocabulary', 'Length', 'Calculated Length', 'Volume', 'Difficulty', 'Effort', 'Time Required', 'Bugs']
+   ['Cyclomatic Complexity']
+
+cut 0.2 (|rho| >= 0.80): 1 clusters
+   ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Vocabulary', 'Length', 'Calculated Length', 'Volume', 'Difficulty', 'Effort', 'Time Required', 'Bugs', 'Cyclomatic Complexity']
+
+cut 0.3 (|rho| >= 0.70): 1 clusters
+   ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Vocabulary', 'Length', 'Calculated Length', 'Volume', 'Difficulty', 'Effort', 'Time Required', 'Bugs', 'Cyclomatic Complexity']

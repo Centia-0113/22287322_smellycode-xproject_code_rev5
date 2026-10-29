@@ -1,0 +1,83 @@
+{
+ "steps": [
+  {
+   "step": "raw file",
+   "rows_removed": 0,
+   "rows_left": 107554,
+   "positives_left": {
+    "GC": 4333,
+    "DC": 3284,
+    "LM": 1566,
+    "FE": 1996
+   }
+  },
+  {
+   "step": "value checks",
+   "rows_removed": 1,
+   "rows_left": 107553,
+   "positives_left": {
+    "GC": 4333,
+    "DC": 3284,
+    "LM": 1566,
+    "FE": 1996
+   }
+  },
+  {
+   "step": "contradictory labels",
+   "strings": 391,
+   "rows_removed": 4907,
+   "rows_removed_thrift": 4247,
+   "positives_removed": {
+    "GC": 0,
+    "DC": 0,
+    "LM": 1060,
+    "FE": 1228
+   },
+   "positives_removed_on_thrift_code": {
+    "GC": 0,
+    "DC": 0,
+    "LM": 957,
+    "FE": 1025
+   },
+   "distinct_strings_with_a_positive_copy": {
+    "GC": 0,
+    "DC": 0,
+    "LM": 288,
+    "FE": 337
+   },
+   "rows_left": 102646,
+   "positives_left": {
+    "GC": 4333,
+    "DC": 3284,
+    "LM": 506,
+    "FE": 768
+   }
+  },
+  {
+   "step": "duplicate copies",
+   "rows_removed": 8803,
+   "copies_from_the_same_project_as_the_kept_copy": 8167,
+   "positives_removed": {
+    "GC": 26,
+    "DC": 41,
+    "LM": 26,
+    "FE": 38
+   },
+   "rows_left": 93843,
+   "positives_left": {
+    "GC": 4307,
+    "DC": 3243,
+    "LM": 480,
+    "FE": 730
+   },
+   "positives_left_on_thrift_code": {
+    "GC": 29,
+    "DC": 6,
+    "LM": 3,
+    "FE": 3
+   }
+  }
+ ],
+ "removed_rows": 13711,
+ "matches_step1_clean_set": true
+}

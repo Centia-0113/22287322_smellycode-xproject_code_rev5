@@ -1,0 +1,21 @@
+contradictory-label rows using the Apache Thrift API: 4247 of 4907 (86.5%)
+labels in contradictory rows: {'God class': 0, 'Data class': 0, 'Long method': 1060, 'Feature envy': 1228} | of which Thrift: {'God class': 0, 'Data class': 0, 'Long method': 957, 'Feature envy': 1025}
+labels in removed duplicate copies: {'God class': 26, 'Data class': 41, 'Long method': 26, 'Feature envy': 38}
+raw labels: {'God class': 4333, 'Data class': 3284, 'Long method': 1566, 'Feature envy': 1996}
+fold 1 metrics kept by CorrScreen: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+fold 2 metrics kept by CorrScreen: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+fold 3 metrics kept by CorrScreen: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+fold 4 metrics kept by CorrScreen: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+fold 5 metrics kept by CorrScreen: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+final training partition kept: ['Logical Lines', 'Distinct Operators', 'Distinct Operands', 'Total Operators', 'Total Operands', 'Difficulty', 'Effort', 'Cyclomatic Complexity']
+cleaned dataset: minimum pairwise Spearman rho 0.772
+training projects: minimum pairwise Spearman rho 0.774
+GC positives that are class-level: 1.000
+DC positives that are class-level: 1.000
+LM positives that are class-level: 0.000
+FE positives that are class-level: 0.000
+median Logical Lines of Long Method samples: 30; smell-free class-level samples at least that long: 37.1%
+XGB LM: PR-AUC random raw 0.165 (9.8x prevalence 0.0168) | random clean 0.018 | grouped 0.030 (5.6x prevalence 0.0053)
+XGB FE: PR-AUC random raw 0.211 (10.1x prevalence 0.0210) | random clean 0.080 | grouped 0.023 (2.8x prevalence 0.0080)
+XGB GC: PR-AUC random raw 0.593 (14.8x prevalence 0.0400) | random clean 0.606 | grouped 0.554 (12.0x prevalence 0.0460)
+XGB DC: PR-AUC random raw 0.298 (9.5x prevalence 0.0313) | random clean 0.344 | grouped 0.255 (7.1x prevalence 0.0358)

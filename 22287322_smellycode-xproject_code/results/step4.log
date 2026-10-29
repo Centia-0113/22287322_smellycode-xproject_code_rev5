@@ -1,0 +1,690 @@
+{
+ "RF": {
+  "macroF1_mean": 0.26330514283140843,
+  "macroF1_sd": 0.026260833596725094,
+  "macroAP_mean": 0.23460372929079815,
+  "macroAP_sd": 0.03167652736665481,
+  "perSmellF1": {
+   "GC": 0.595,
+   "DC": 0.324,
+   "LM": 0.075,
+   "FE": 0.06
+  },
+  "perSmellAP": {
+   "GC": 0.618,
+   "DC": 0.258,
+   "LM": 0.037,
+   "FE": 0.025
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": true,
+    "thr": 0.738
+   },
+   "DC": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.148
+   },
+   "LM": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.052
+   },
+   "FE": {
+    "params": {
+     "max_depth": null,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.045
+   }
+  }
+ },
+ "LR": {
+  "macroF1_mean": 0.23730104772689414,
+  "macroF1_sd": 0.03342484492236134,
+  "macroAP_mean": 0.19438662862100364,
+  "macroAP_sd": 0.04560231716499835,
+  "perSmellF1": {
+   "GC": 0.594,
+   "DC": 0.247,
+   "LM": 0.031,
+   "FE": 0.077
+  },
+  "perSmellAP": {
+   "GC": 0.574,
+   "DC": 0.159,
+   "LM": 0.014,
+   "FE": 0.029
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "C": 0.01
+    },
+    "weighted": true,
+    "thr": 0.839
+   },
+   "DC": {
+    "params": {
+     "C": 10.0
+    },
+    "weighted": false,
+    "thr": 0.102
+   },
+   "LM": {
+    "params": {
+     "C": 10.0
+    },
+    "weighted": true,
+    "thr": 0.61
+   },
+   "FE": {
+    "params": {
+     "C": 10.0
+    },
+    "weighted": true,
+    "thr": 0.732
+   }
+  }
+ },
+ "XGB": {
+  "macroF1_mean": 0.26728002387971017,
+  "macroF1_sd": 0.033625933486743115,
+  "macroAP_mean": 0.23440765398695226,
+  "macroAP_sd": 0.038930722414496265,
+  "perSmellF1": {
+   "GC": 0.593,
+   "DC": 0.329,
+   "LM": 0.086,
+   "FE": 0.061
+  },
+  "perSmellAP": {
+   "GC": 0.615,
+   "DC": 0.262,
+   "LM": 0.035,
+   "FE": 0.025
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": true,
+    "thr": 0.901
+   },
+   "DC": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.1
+    },
+    "weighted": false,
+    "thr": 0.187
+   },
+   "LM": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": true,
+    "thr": 0.865
+   },
+   "FE": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 8,
+     "learning_rate": 0.05
+    },
+    "weighted": false,
+    "thr": 0.06
+   }
+  }
+ }
+}
+best model by validation macro-F1: XGB
+final models fitted and test scored once  [47s]
+{
+ "RF": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6313229571984436,
+    "R": 0.7572928821470245,
+    "F1": 0.6885941644562334,
+    "PRAUC": 0.723197314424823
+   },
+   "DC": {
+    "P": 0.1881625441696113,
+    "R": 0.3817204301075269,
+    "F1": 0.25207100591715975,
+    "PRAUC": 0.19375715261438137
+   },
+   "LM": {
+    "P": 0.060790273556231005,
+    "R": 0.24691358024691357,
+    "F1": 0.0975609756097561,
+    "PRAUC": 0.06064482091908201
+   },
+   "FE": {
+    "P": 0.02671118530884808,
+    "R": 0.12213740458015267,
+    "F1": 0.043835616438356165,
+    "PRAUC": 0.0246061811617109
+   }
+  },
+  "macroF1": 0.2705154406053764,
+  "macroAP": 0.2505513672799993,
+  "microF1": 0.3809119830328738,
+  "CI": {
+   "macroF1": [
+    0.23835238196569686,
+    0.3032583165880978
+   ],
+   "macroAP": [
+    0.22506617993209907,
+    0.28897682858404816
+   ],
+   "F1_GC": [
+    0.5827361357305647,
+    0.7536757918809566
+   ],
+   "F1_DC": [
+    0.1873642739171102,
+    0.3269789004570674
+   ],
+   "F1_LM": [
+    0.06830655394352632,
+    0.13658875131863857
+   ],
+   "F1_FE": [
+    0.03010636903312796,
+    0.06221568818040435
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.7344081138359068,
+    "q1": 0.6033333333333333,
+    "q3": 0.8333333333333334
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.19201228878648233,
+    "q1": 0.15677212939921792,
+    "q3": 0.3180921052631579
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.12222222222222222,
+    "q1": 0.07040816326530612,
+    "q3": 0.1565053425518542
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.03943278943278944,
+    "q1": 0.0,
+    "q3": 0.05820340184266478
+   }
+  }
+ },
+ "LR": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6385302879841113,
+    "R": 0.750291715285881,
+    "F1": 0.6899141630901288,
+    "PRAUC": 0.7611139021919632
+   },
+   "DC": {
+    "P": 0.13629032258064516,
+    "R": 0.30286738351254483,
+    "F1": 0.18798665183537264,
+    "PRAUC": 0.10549477989227599
+   },
+   "LM": {
+    "P": 0.012456546929316338,
+    "R": 0.5308641975308642,
+    "F1": 0.024341919048966883,
+    "PRAUC": 0.01373994646380393
+   },
+   "FE": {
+    "P": 0.019580419580419582,
+    "R": 0.10687022900763359,
+    "F1": 0.03309692671394799,
+    "PRAUC": 0.015368823869297946
+   }
+  },
+  "macroF1": 0.23383491517210409,
+  "macroAP": 0.22392936310433526,
+  "microF1": 0.2161422708618331,
+  "CI": {
+   "macroF1": [
+    0.203728358665808,
+    0.2661006371117145
+   ],
+   "macroAP": [
+    0.196109425623934,
+    0.25935812162248234
+   ],
+   "F1_GC": [
+    0.5652978513395872,
+    0.762076785063228
+   ],
+   "F1_DC": [
+    0.11441546139272678,
+    0.29428787720580557
+   ],
+   "F1_LM": [
+    0.015403323734517574,
+    0.0424057173280032
+   ],
+   "F1_FE": [
+    0.012847793882608502,
+    0.05908573194348496
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.7609154929577464,
+    "q1": 0.5441729323308271,
+    "q3": 0.8432262461662381
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.16821808510638298,
+    "q1": 0.08288327526132404,
+    "q3": 0.28296703296703296
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.0228912705555101,
+    "q1": 0.017694097121256178,
+    "q3": 0.03192546583850932
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.0,
+    "q1": 0.0,
+    "q3": 0.03213058419243986
+   }
+  }
+ },
+ "XGB": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6767091541135574,
+    "R": 0.6814469078179697,
+    "F1": 0.6790697674418604,
+    "PRAUC": 0.7489918828527217
+   },
+   "DC": {
+    "P": 0.23641304347826086,
+    "R": 0.3118279569892473,
+    "F1": 0.2689335394126739,
+    "PRAUC": 0.18962130439841546
+   },
+   "LM": {
+    "P": 0.044009779951100246,
+    "R": 0.2222222222222222,
+    "F1": 0.07346938775510205,
+    "PRAUC": 0.037346307546657506
+   },
+   "FE": {
+    "P": 0.03773584905660377,
+    "R": 0.061068702290076333,
+    "F1": 0.04664723032069971,
+    "PRAUC": 0.02147745125241727
+   }
+  },
+  "macroF1": 0.26702998123258403,
+  "macroAP": 0.24935923651255298,
+  "microF1": 0.407590330127372,
+  "CI": {
+   "macroF1": [
+    0.23237722731324714,
+    0.3017665877857556
+   ],
+   "macroAP": [
+    0.21564322146465262,
+    0.29235958243554416
+   ],
+   "F1_GC": [
+    0.5619052752365006,
+    0.7567344654815891
+   ],
+   "F1_DC": [
+    0.20864201450625122,
+    0.3415752066564659
+   ],
+   "F1_LM": [
+    0.044516405214317274,
+    0.11321647520980893
+   ],
+   "F1_FE": [
+    0.01565437957291346,
+    0.08372874731287863
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.7354312354312355,
+    "q1": 0.5695612980769231,
+    "q3": 0.8586956521739131
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.2264957264957265,
+    "q1": 0.1732339730502246,
+    "q3": 0.35141871165644173
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.06719367588932806,
+    "q1": 0.03819444444444444,
+    "q3": 0.13214285714285715
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.0,
+    "q1": 0.0,
+    "q3": 0.0875
+   }
+  }
+ }
+}
+{
+ "GC-DC": {
+  "n11": 107,
+  "P(DC|GC)": 0.024843278384026005,
+  "P(GC|DC)": 0.03299414122725871,
+  "phi": -0.011664622483532665
+ },
+ "GC-LM": {
+  "n11": 0,
+  "P(LM|GC)": 0.0,
+  "P(GC|LM)": 0.0,
+  "phi": -0.01572612818028834
+ },
+ "GC-FE": {
+  "n11": 0,
+  "P(FE|GC)": 0.0,
+  "P(GC|FE)": 0.0,
+  "phi": -0.019419804879412823
+ },
+ "DC-LM": {
+  "n11": 0,
+  "P(LM|DC)": 0.0,
+  "P(DC|LM)": 0.0,
+  "phi": -0.013565712071315128
+ },
+ "DC-FE": {
+  "n11": 0,
+  "P(FE|DC)": 0.0,
+  "P(DC|FE)": 0.0,
+  "phi": -0.01675196071499938
+ },
+ "LM-FE": {
+  "n11": 282,
+  "P(FE|LM)": 0.5875,
+  "P(LM|FE)": 0.3863013698630137,
+  "phi": 0.47313773113969193
+ }
+}
+{
+ "RF-GC": {
+  "n_alone": 833,
+  "recall_alone": 0.773109243697479,
+  "n_co": 24,
+  "recall_co": 0.20833333333333334
+ },
+ "RF-DC": {
+  "n_alone": 534,
+  "recall_alone": 0.3970037453183521,
+  "n_co": 24,
+  "recall_co": 0.041666666666666664
+ },
+ "RF-LM": {
+  "n_alone": 31,
+  "recall_alone": 0.3225806451612903,
+  "n_co": 50,
+  "recall_co": 0.2
+ },
+ "RF-FE": {
+  "n_alone": 81,
+  "recall_alone": 0.08641975308641975,
+  "n_co": 50,
+  "recall_co": 0.18
+ },
+ "LR-GC": {
+  "n_alone": 833,
+  "recall_alone": 0.7635054021608644,
+  "n_co": 24,
+  "recall_co": 0.2916666666666667
+ },
+ "LR-DC": {
+  "n_alone": 534,
+  "recall_alone": 0.2958801498127341,
+  "n_co": 24,
+  "recall_co": 0.4583333333333333
+ },
+ "LR-LM": {
+  "n_alone": 31,
+  "recall_alone": 0.5161290322580645,
+  "n_co": 50,
+  "recall_co": 0.54
+ },
+ "LR-FE": {
+  "n_alone": 81,
+  "recall_alone": 0.13580246913580246,
+  "n_co": 50,
+  "recall_co": 0.06
+ },
+ "XGB-GC": {
+  "n_alone": 833,
+  "recall_alone": 0.6998799519807923,
+  "n_co": 24,
+  "recall_co": 0.041666666666666664
+ },
+ "XGB-DC": {
+  "n_alone": 534,
+  "recall_alone": 0.32397003745318353,
+  "n_co": 24,
+  "recall_co": 0.041666666666666664
+ },
+ "XGB-LM": {
+  "n_alone": 31,
+  "recall_alone": 0.25806451612903225,
+  "n_co": 50,
+  "recall_co": 0.2
+ },
+ "XGB-FE": {
+  "n_alone": 81,
+  "recall_alone": 0.06172839506172839,
+  "n_co": 50,
+  "recall_co": 0.06
+ }
+}
+test permutation importance done  [188s]
+validation-fold permutation importance done  [469s]
+{
+ "perm_test": {
+  "RF-GC": {
+   "Size/operands": 0.6369517039122397,
+   "Distinct operators": -0.0012735784569165131,
+   "Operator effort": 0.04682218949504435,
+   "Cyclomatic complexity": 0.011970181553938631
+  },
+  "RF-DC": {
+   "Size/operands": 0.15457725837826747,
+   "Distinct operators": 0.022196115806466986,
+   "Operator effort": 0.0650584683269077,
+   "Cyclomatic complexity": 0.06152775592437805
+  },
+  "RF-LM": {
+   "Size/operands": 0.04493110165479793,
+   "Distinct operators": -0.0012773060305287173,
+   "Operator effort": 0.04551287262132645,
+   "Cyclomatic complexity": 0.0433700512870379
+  },
+  "RF-FE": {
+   "Size/operands": 0.017592124270264943,
+   "Distinct operators": 0.004571758948780321,
+   "Operator effort": 0.01280968347190418,
+   "Cyclomatic complexity": 0.0062580337598484945
+  },
+  "LR-GC": {
+   "Size/operands": 0.7104656429862563,
+   "Distinct operators": 0.012714435622101417,
+   "Operator effort": 0.018325691186075722,
+   "Cyclomatic complexity": 0.0014669913342796105
+  },
+  "LR-DC": {
+   "Size/operands": 0.07622917985427997,
+   "Distinct operators": 0.07659307849629482,
+   "Operator effort": 0.0635696199881268,
+   "Cyclomatic complexity": 0.025349492447507727
+  },
+  "LR-LM": {
+   "Size/operands": 0.0009254653576015199,
+   "Distinct operators": 0.009799421049284862,
+   "Operator effort": 0.006133553686230448,
+   "Cyclomatic complexity": 0.009660973678802243
+  },
+  "LR-FE": {
+   "Size/operands": 0.008336818641631705,
+   "Distinct operators": 0.008572893706545442,
+   "Operator effort": 0.007157173047410831,
+   "Cyclomatic complexity": 0.0033914065067982987
+  },
+  "XGB-GC": {
+   "Size/operands": 0.6869091332957771,
+   "Distinct operators": 0.0016967521970629117,
+   "Operator effort": 0.11559646802043055,
+   "Cyclomatic complexity": 0.016610981515084777
+  },
+  "XGB-DC": {
+   "Size/operands": 0.15287102997851648,
+   "Distinct operators": 0.025667029136267762,
+   "Operator effort": 0.040816349113230836,
+   "Cyclomatic complexity": 0.04703068021818811
+  },
+  "XGB-LM": {
+   "Size/operands": 0.030212731463685794,
+   "Distinct operators": 0.008355422573254005,
+   "Operator effort": 0.01330608029460011,
+   "Cyclomatic complexity": 0.02333463955974852
+  },
+  "XGB-FE": {
+   "Size/operands": 0.01439801954078455,
+   "Distinct operators": -0.0005359138963082286,
+   "Operator effort": 0.009211801146868651,
+   "Cyclomatic complexity": 0.005650702118372948
+  }
+ },
+ "rank_agreement": {
+  "RF-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-DC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-LM": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Operator effort",
+   "top_specific": "Operator effort"
+  },
+  "RF-FE": {
+   "spearman": 0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Size/operands",
+   "top_specific": "Operator effort"
+  },
+  "LR-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "LR-DC": {
+   "spearman": 0.39999999999999997,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "LR-LM": {
+   "spearman": -0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "LR-FE": {
+   "spearman": 0.39999999999999997,
+   "top_match": false,
+   "top_perm": "Distinct operators",
+   "top_specific": "Size/operands"
+  },
+  "XGB-GC": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-DC": {
+   "spearman": 0.7999999999999999,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-LM": {
+   "spearman": 0.7999999999999999,
+   "top_match": false,
+   "top_perm": "Size/operands",
+   "top_specific": "Cyclomatic complexity"
+  },
+  "XGB-FE": {
+   "spearman": 1.0,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  }
+ },
+ "cross": {
+  "GC RF-XGB": 1.0,
+  "GC RF-LR": 0.7999999999999999,
+  "GC XGB-LR": 0.7999999999999999,
+  "DC RF-XGB": 0.7999999999999999,
+  "DC RF-LR": -0.19999999999999998,
+  "DC XGB-LR": -0.39999999999999997,
+  "LM RF-XGB": 0.39999999999999997,
+  "LM RF-LR": -0.7999999999999999,
+  "LM XGB-LR": -0.7999999999999999,
+  "FE RF-XGB": 1.0,
+  "FE RF-LR": -0.19999999999999998,
+  "FE XGB-LR": -0.19999999999999998
+ }
+}
+done in 469s

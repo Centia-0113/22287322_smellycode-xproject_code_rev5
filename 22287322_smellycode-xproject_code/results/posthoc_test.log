@@ -1,0 +1,823 @@
+{
+ "RF": {
+  "macroF1_mean": 0.461702706585461,
+  "macroF1_sd": 0.0398715209344341,
+  "macroAP_mean": 0.3957294525579226,
+  "macroAP_sd": 0.05847177597616653,
+  "perSmellF1": {
+   "GC": 0.597,
+   "DC": 0.335,
+   "LM": 0.55,
+   "FE": 0.365
+  },
+  "perSmellAP": {
+   "GC": 0.621,
+   "DC": 0.269,
+   "LM": 0.444,
+   "FE": 0.248
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": true,
+    "thr": 0.687
+   },
+   "DC": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.196
+   },
+   "LM": {
+    "params": {
+     "max_depth": null,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.178
+   },
+   "FE": {
+    "params": {
+     "max_depth": 20,
+     "min_samples_leaf": 5
+    },
+    "weighted": false,
+    "thr": 0.189
+   }
+  }
+ },
+ "LR": {
+  "macroF1_mean": 0.44174659238108793,
+  "macroF1_sd": 0.055086765272046465,
+  "macroAP_mean": 0.3757627225460781,
+  "macroAP_sd": 0.07551257691900595,
+  "perSmellF1": {
+   "GC": 0.595,
+   "DC": 0.263,
+   "LM": 0.568,
+   "FE": 0.341
+  },
+  "perSmellAP": {
+   "GC": 0.576,
+   "DC": 0.178,
+   "LM": 0.488,
+   "FE": 0.262
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "C": 0.01
+    },
+    "weighted": true,
+    "thr": 0.787
+   },
+   "DC": {
+    "params": {
+     "C": 10.0
+    },
+    "weighted": false,
+    "thr": 0.122
+   },
+   "LM": {
+    "params": {
+     "C": 0.1
+    },
+    "weighted": false,
+    "thr": 0.215
+   },
+   "FE": {
+    "params": {
+     "C": 10.0
+    },
+    "weighted": false,
+    "thr": 0.142
+   }
+  }
+ },
+ "XGB": {
+  "macroF1_mean": 0.4641016064879344,
+  "macroF1_sd": 0.04457469138905948,
+  "macroAP_mean": 0.3974811290992036,
+  "macroAP_sd": 0.06477880157861118,
+  "perSmellF1": {
+   "GC": 0.596,
+   "DC": 0.341,
+   "LM": 0.55,
+   "FE": 0.369
+  },
+  "perSmellAP": {
+   "GC": 0.613,
+   "DC": 0.27,
+   "LM": 0.446,
+   "FE": 0.26
+  },
+  "settings": {
+   "GC": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": true,
+    "thr": 0.865
+   },
+   "DC": {
+    "params": {
+     "n_estimators": 500,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": true,
+    "thr": 0.79
+   },
+   "LM": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": false,
+    "thr": 0.198
+   },
+   "FE": {
+    "params": {
+     "n_estimators": 200,
+     "max_depth": 4,
+     "learning_rate": 0.05
+    },
+    "weighted": false,
+    "thr": 0.134
+   }
+  }
+ }
+}
+best model by matched validation macro-F1: XGB
+matched models refitted and previously examined test projects re-scored  [24s]
+{
+ "RF": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6161710037174721,
+    "R": 0.7736289381563594,
+    "F1": 0.685980341438179,
+    "PRAUC": 0.726046315431395
+   },
+   "DC": {
+    "P": 0.23809523809523808,
+    "R": 0.31362007168458783,
+    "F1": 0.27068832173240526,
+    "PRAUC": 0.20478795325803703
+   },
+   "LM": {
+    "P": 0.44155844155844154,
+    "R": 0.8395061728395061,
+    "F1": 0.5787234042553191,
+    "PRAUC": 0.4710065506832552
+   },
+   "FE": {
+    "P": 0.2742857142857143,
+    "R": 0.366412213740458,
+    "F1": 0.3137254901960784,
+    "PRAUC": 0.24335188353125292
+   }
+  },
+  "macroF1": 0.46227938940549546,
+  "macroAP": 0.41129817572598504,
+  "microF1": 0.5065038492168835,
+  "prevalence": {
+   "GC": 0.0634251036116045,
+   "DC": 0.04129662522202487,
+   "LM": 0.015013901760889712,
+   "FE": 0.02428174235403151
+  },
+  "CI": {
+   "macroF1": [
+    0.425198023260622,
+    0.5061327254854093
+   ],
+   "macroAP": [
+    0.37084957255417994,
+    0.47561816636153553
+   ],
+   "F1_GC": [
+    0.5774939715713204,
+    0.7558579756971272
+   ],
+   "F1_DC": [
+    0.2077344804871036,
+    0.3423834712694437
+   ],
+   "F1_LM": [
+    0.5027293794524075,
+    0.6868640208197787
+   ],
+   "F1_FE": [
+    0.2558062698494007,
+    0.38379173482456475
+   ],
+   "AP_GC": [
+    0.5938183356487622,
+    0.8184766781340495
+   ],
+   "AP_DC": [
+    0.14177211968484488,
+    0.2983168441482153
+   ],
+   "AP_LM": [
+    0.35831289511817777,
+    0.6463889097160443
+   ],
+   "AP_FE": [
+    0.1921338194188852,
+    0.3565777629396977
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.7264444444444444,
+    "q1": 0.5883750395945517,
+    "q3": 0.8449206349206348
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.22924600152322927,
+    "q1": 0.16203703703703703,
+    "q3": 0.33536585365853655
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.5657142857142857,
+    "q1": 0.485,
+    "q3": 0.6499999999999999
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.3045977011494253,
+    "q1": 0.19761904761904764,
+    "q3": 0.39166666666666666
+   }
+  }
+ },
+ "LR": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6367226061204343,
+    "R": 0.7526254375729288,
+    "F1": 0.6898395721925134,
+    "PRAUC": 0.7645479231741931
+   },
+   "DC": {
+    "P": 0.1423185673892554,
+    "R": 0.27060931899641577,
+    "F1": 0.1865348980852378,
+    "PRAUC": 0.115797990868725
+   },
+   "LM": {
+    "P": 0.475,
+    "R": 0.7037037037037037,
+    "F1": 0.5671641791044776,
+    "PRAUC": 0.4816140032173402
+   },
+   "FE": {
+    "P": 0.2687224669603524,
+    "R": 0.46564885496183206,
+    "F1": 0.3407821229050279,
+    "PRAUC": 0.25406325552042525
+   }
+  },
+  "macroF1": 0.4460801930718141,
+  "macroAP": 0.4040057931951709,
+  "microF1": 0.4515810276679842,
+  "prevalence": {
+   "GC": 0.0634251036116045,
+   "DC": 0.04129662522202487,
+   "LM": 0.015013901760889712,
+   "FE": 0.02428174235403151
+  },
+  "CI": {
+   "macroF1": [
+    0.39695057305138953,
+    0.4888009756206618
+   ],
+   "macroAP": [
+    0.3665063773941179,
+    0.4595238353483851
+   ],
+   "F1_GC": [
+    0.5670048701298701,
+    0.7624930424319992
+   ],
+   "F1_DC": [
+    0.11502705055876555,
+    0.28727283417691124
+   ],
+   "F1_LM": [
+    0.4516007761338831,
+    0.6861560163002105
+   ],
+   "F1_FE": [
+    0.2812362938596491,
+    0.41016882891231315
+   ],
+   "AP_GC": [
+    0.6311790797114568,
+    0.8603381776970165
+   ],
+   "AP_DC": [
+    0.06550935155973828,
+    0.2171859331380204
+   ],
+   "AP_LM": [
+    0.36532602375475487,
+    0.6217184766130204
+   ],
+   "AP_FE": [
+    0.21101096360790284,
+    0.34045080206615375
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.7628333509012333,
+    "q1": 0.5441729323308271,
+    "q3": 0.8449491838620264
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.18344155844155846,
+    "q1": 0.08163265306122448,
+    "q3": 0.3060897435897436
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.5857142857142856,
+    "q1": 0.4659090909090909,
+    "q3": 0.6176911544227887
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.3453416149068323,
+    "q1": 0.2056686046511628,
+    "q3": 0.4464285714285714
+   }
+  }
+ },
+ "XGB": {
+  "per_smell": {
+   "GC": {
+    "P": 0.6681465038845728,
+    "R": 0.7024504084014003,
+    "F1": 0.6848691695108078,
+    "PRAUC": 0.7559660802616283
+   },
+   "DC": {
+    "P": 0.24701195219123506,
+    "R": 0.3333333333333333,
+    "F1": 0.2837528604118993,
+    "PRAUC": 0.2053221422803139
+   },
+   "LM": {
+    "P": 0.45384615384615384,
+    "R": 0.7283950617283951,
+    "F1": 0.5592417061611374,
+    "PRAUC": 0.46199060454157376
+   },
+   "FE": {
+    "P": 0.2558139534883721,
+    "R": 0.4198473282442748,
+    "F1": 0.3179190751445087,
+    "PRAUC": 0.25458863476176974
+   }
+  },
+  "macroF1": 0.4614457028070883,
+  "macroAP": 0.4194668654613214,
+  "microF1": 0.49751792608935463,
+  "prevalence": {
+   "GC": 0.0634251036116045,
+   "DC": 0.04129662522202487,
+   "LM": 0.015013901760889712,
+   "FE": 0.02428174235403151
+  },
+  "CI": {
+   "macroF1": [
+    0.4204625851201688,
+    0.5019178889727078
+   ],
+   "macroAP": [
+    0.37561514047601746,
+    0.48430388186767587
+   ],
+   "F1_GC": [
+    0.5671607734289192,
+    0.7590786835152942
+   ],
+   "F1_DC": [
+    0.2195321132596685,
+    0.3536787114342343
+   ],
+   "F1_LM": [
+    0.45154707044107967,
+    0.687848035389019
+   ],
+   "F1_FE": [
+    0.25396345849518054,
+    0.37797598669731497
+   ],
+   "AP_GC": [
+    0.6217633457091792,
+    0.8468661005030987
+   ],
+   "AP_DC": [
+    0.14343733005569292,
+    0.29352011061600447
+   ],
+   "AP_LM": [
+    0.3453524118890407,
+    0.6309179012126466
+   ],
+   "AP_FE": [
+    0.19188745191005316,
+    0.3654134039128188
+   ]
+  },
+  "per_project_F1": {
+   "GC": {
+    "n_projects": 18,
+    "median": 0.751304347826087,
+    "q1": 0.6181422351233672,
+    "q3": 0.8423795049934868
+   },
+   "DC": {
+    "n_projects": 16,
+    "median": 0.2038961038961039,
+    "q1": 0.1691666666666667,
+    "q3": 0.3776355421686747
+   },
+   "LM": {
+    "n_projects": 10,
+    "median": 0.5584415584415584,
+    "q1": 0.5236572890025575,
+    "q3": 0.6954545454545454
+   },
+   "FE": {
+    "n_projects": 12,
+    "median": 0.3333333333333333,
+    "q1": 0.2418478260869565,
+    "q3": 0.3657298985167838
+   }
+  }
+ }
+}
+matched clusters: {"class": {"Size/operands": ["Logical Lines", "Distinct Operands", "Total Operands", "Vocabulary", "Length", "Calculated Length", "Volume", "Effort", "Time Required", "Bugs"], "Distinct operators": ["Distinct Operators"], "Total operators": ["Total Operators"], "Difficulty": ["Difficulty"], "Cyclomatic complexity": ["Cyclomatic Complexity"]}, "method": {"Logical lines": ["Logical Lines"], "Operators": ["Distinct Operators", "Total Operators", "Difficulty", "Effort", "Time Required"], "Operands": ["Distinct Operands", "Total Operands", "Vocabulary", "Length", "Calculated Length", "Volume", "Bugs"], "Cyclomatic complexity": ["Cyclomatic Complexity"]}}
+RF GC matched-validation permutation importance done  [159s]
+RF DC matched-validation permutation importance done  [244s]
+RF LM matched-validation permutation importance done  [272s]
+RF FE matched-validation permutation importance done  [306s]
+LR GC matched-validation permutation importance done  [308s]
+LR DC matched-validation permutation importance done  [311s]
+LR LM matched-validation permutation importance done  [312s]
+LR FE matched-validation permutation importance done  [313s]
+XGB GC matched-validation permutation importance done  [318s]
+XGB DC matched-validation permutation importance done  [329s]
+XGB LM matched-validation permutation importance done  [332s]
+XGB FE matched-validation permutation importance done  [334s]
+{
+ "perm_val_matched": {
+  "RF-GC": {
+   "Size/operands": {
+    "mean": 0.5396478513899897,
+    "sd": 0.12317765492069359
+   },
+   "Distinct operators": {
+    "mean": 0.008900083478934432,
+    "sd": 0.020464141869133
+   },
+   "Total operators": {
+    "mean": 0.011559098114751674,
+    "sd": 0.011606927627694075
+   },
+   "Difficulty": {
+    "mean": 0.005700104302203842,
+    "sd": 0.017383735258269226
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.036383538683004715,
+    "sd": 0.01711218429368392
+   }
+  },
+  "RF-DC": {
+   "Size/operands": {
+    "mean": 0.21099561431294803,
+    "sd": 0.04510032465492695
+   },
+   "Distinct operators": {
+    "mean": 0.03615140538390672,
+    "sd": 0.01443311845879276
+   },
+   "Total operators": {
+    "mean": 0.09843918558879518,
+    "sd": 0.0189579929119042
+   },
+   "Difficulty": {
+    "mean": 0.012839833975665477,
+    "sd": 0.010322934764190753
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.04763910141764495,
+    "sd": 0.019447813644957738
+   }
+  },
+  "RF-LM": {
+   "Logical lines": {
+    "mean": 0.02488343705817824,
+    "sd": 0.02325000688957824
+   },
+   "Operators": {
+    "mean": -0.027301124101453383,
+    "sd": 0.023843061230853353
+   },
+   "Operands": {
+    "mean": 0.047537902013512504,
+    "sd": 0.02625853468460419
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.06899438882780178,
+    "sd": 0.05521968572963124
+   }
+  },
+  "RF-FE": {
+   "Logical lines": {
+    "mean": 0.0004189016324386695,
+    "sd": 0.017096137224353946
+   },
+   "Operators": {
+    "mean": -0.01935800033549262,
+    "sd": 0.04070043121891389
+   },
+   "Operands": {
+    "mean": 0.17489979859540375,
+    "sd": 0.03671832741420146
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.01813331928230581,
+    "sd": 0.03575033118033991
+   }
+  },
+  "LR-GC": {
+   "Size/operands": {
+    "mean": 0.5106163117398157,
+    "sd": 0.16686627466483892
+   },
+   "Distinct operators": {
+    "mean": 0.012453633396048614,
+    "sd": 0.003989039822745575
+   },
+   "Total operators": {
+    "mean": 0.0003684969101214896,
+    "sd": 0.0005604668772948508
+   },
+   "Difficulty": {
+    "mean": 0.0009156148914049634,
+    "sd": 0.0019831449664789724
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.004918898920406071,
+    "sd": 0.0033583233644460943
+   }
+  },
+  "LR-DC": {
+   "Size/operands": {
+    "mean": 0.1352634067755052,
+    "sd": 0.0042915999492525135
+   },
+   "Distinct operators": {
+    "mean": 0.11823579771183043,
+    "sd": 0.007932743934023925
+   },
+   "Total operators": {
+    "mean": 0.07478734030517478,
+    "sd": 0.026693720120025473
+   },
+   "Difficulty": {
+    "mean": 0.12186662112370031,
+    "sd": 0.009638118796316363
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.035209274529771545,
+    "sd": 0.008364042494990842
+   }
+  },
+  "LR-LM": {
+   "Logical lines": {
+    "mean": 0.20652407476811904,
+    "sd": 0.10335977499884892
+   },
+   "Operators": {
+    "mean": -0.0011557990560366305,
+    "sd": 0.0007618057983620601
+   },
+   "Operands": {
+    "mean": 0.05879512552747264,
+    "sd": 0.02661481365617335
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.17800588380430477,
+    "sd": 0.04415158114273152
+   }
+  },
+  "LR-FE": {
+   "Logical lines": {
+    "mean": 0.010543781334346773,
+    "sd": 0.015728160725413214
+   },
+   "Operators": {
+    "mean": 0.0156756848792474,
+    "sd": 0.012575395661650487
+   },
+   "Operands": {
+    "mean": 0.23112557552122331,
+    "sd": 0.07828610962692834
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.019066617953131148,
+    "sd": 0.01764927286380536
+   }
+  },
+  "XGB-GC": {
+   "Size/operands": {
+    "mean": 0.5449166216025187,
+    "sd": 0.1527640889362722
+   },
+   "Distinct operators": {
+    "mean": -0.001184484717394874,
+    "sd": 0.03245888605425066
+   },
+   "Total operators": {
+    "mean": 0.022285451655002345,
+    "sd": 0.016229903443038898
+   },
+   "Difficulty": {
+    "mean": 0.027979601270595778,
+    "sd": 0.03243506008367471
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.048879388735064276,
+    "sd": 0.03713542014308199
+   }
+  },
+  "XGB-DC": {
+   "Size/operands": {
+    "mean": 0.2082202840913204,
+    "sd": 0.045209680168991156
+   },
+   "Distinct operators": {
+    "mean": 0.0404786312099011,
+    "sd": 0.028839812328607373
+   },
+   "Total operators": {
+    "mean": 0.1017613169308079,
+    "sd": 0.022548411774789476
+   },
+   "Difficulty": {
+    "mean": 0.05224890976745796,
+    "sd": 0.02744235509458227
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.04541799495721442,
+    "sd": 0.026859976440063944
+   }
+  },
+  "XGB-LM": {
+   "Logical lines": {
+    "mean": 0.2556979683117957,
+    "sd": 0.12482381803932473
+   },
+   "Operators": {
+    "mean": -0.01650106869984897,
+    "sd": 0.010326287507219346
+   },
+   "Operands": {
+    "mean": 0.056175870339652524,
+    "sd": 0.03617316159867304
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.08973392567655442,
+    "sd": 0.048085603501614685
+   }
+  },
+  "XGB-FE": {
+   "Logical lines": {
+    "mean": 0.0179854593268294,
+    "sd": 0.029894561363616807
+   },
+   "Operators": {
+    "mean": -0.006371654288855885,
+    "sd": 0.029507336284659066
+   },
+   "Operands": {
+    "mean": 0.20683639970674741,
+    "sd": 0.05191592143997204
+   },
+   "Cyclomatic complexity": {
+    "mean": 0.03323051806931706,
+    "sd": 0.02939386874563231
+   }
+  }
+ },
+ "rank_agreement": {
+  "RF-GC": {
+   "spearman": 0.49999999999999994,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-DC": {
+   "spearman": 0.7,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "RF-LM": {
+   "spearman": -0.39999999999999997,
+   "top_match": false,
+   "top_perm": "Cyclomatic complexity",
+   "top_specific": "Operands"
+  },
+  "RF-FE": {
+   "spearman": 0.19999999999999998,
+   "top_match": true,
+   "top_perm": "Operands",
+   "top_specific": "Operands"
+  },
+  "LR-GC": {
+   "spearman": 0.8999999999999998,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "LR-DC": {
+   "spearman": 0.9999999999999999,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "LR-LM": {
+   "spearman": 0.7999999999999999,
+   "top_match": true,
+   "top_perm": "Logical lines",
+   "top_specific": "Logical lines"
+  },
+  "LR-FE": {
+   "spearman": 0.7999999999999999,
+   "top_match": true,
+   "top_perm": "Operands",
+   "top_specific": "Operands"
+  },
+  "XGB-GC": {
+   "spearman": 0.8999999999999998,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-DC": {
+   "spearman": 0.7,
+   "top_match": true,
+   "top_perm": "Size/operands",
+   "top_specific": "Size/operands"
+  },
+  "XGB-LM": {
+   "spearman": 0.7999999999999999,
+   "top_match": true,
+   "top_perm": "Logical lines",
+   "top_specific": "Logical lines"
+  },
+  "XGB-FE": {
+   "spearman": 0.19999999999999998,
+   "top_match": true,
+   "top_perm": "Operands",
+   "top_specific": "Operands"
+  }
+ },
+ "cross": {
+  "GC RF-XGB": 0.7,
+  "GC RF-LR": 0.49999999999999994,
+  "GC XGB-LR": 0.39999999999999997,
+  "DC RF-XGB": 0.7,
+  "DC RF-LR": 0.09999999999999999,
+  "DC XGB-LR": 0.49999999999999994,
+  "LM RF-XGB": 0.39999999999999997,
+  "LM RF-LR": 0.39999999999999997,
+  "LM XGB-LR": 1.0,
+  "FE RF-XGB": 1.0,
+  "FE RF-LR": 0.7999999999999999,
+  "FE XGB-LR": 0.7999999999999999
+ }
+}
+done in 334s

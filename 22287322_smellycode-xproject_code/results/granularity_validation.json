@@ -1,0 +1,85 @@
+{
+ "n": 93843,
+ "seconds": 689,
+ "parsed": 92970,
+ "failed": 848,
+ "other": {
+  "fail": 848,
+  "other:FieldDeclaration": 25
+ },
+ "agreement_parsed": 1.0,
+ "disagreements": 0,
+ "agreement_labelled_smell": {
+  "n_parsed": 8258,
+  "agreement": 1.0
+ },
+ "agreement_no_smell_label": {
+  "n_parsed": 84712,
+  "agreement": 1.0
+ },
+ "rule_class": {
+  "n": 68738,
+  "parsed": 67942,
+  "parser_agrees": 67942
+ },
+ "rule_method": {
+  "n": 25105,
+  "parsed": 25028,
+  "parser_agrees": 25028
+ },
+ "class_name_matches_Class_column": {
+  "n": 67942,
+  "share": 0.9999411262547467
+ },
+ "method_samples_whose_name_equals_Class_column": {
+  "n": 25028,
+  "share": 0.0029167332587501996
+ },
+ "examples_disagree": [],
+ "examples_failed": [
+  {
+   "rule": "class",
+   "code": "public final class ByteSequenceData { private ByteSequenceData ( ) { } public static byte [ ] toByteArray ( ByteSequence packet ) { if ( packet . offset == 0 &&"
+  },
+  {
+   "rule": "method",
+   "code": "public String readUTF ( ) throws IOException { int length = readUnsignedShort ( ) ; char [ ] characters = new char [ length ] ; int c ; int c2 ; int c3 ; int co"
+  },
+  {
+   "rule": "class",
+   "code": "public final class DataByteArrayInputStream extends InputStream implements DataInput { private byte [ ] buf ; private int pos ; private int offset ; public Data"
+  },
+  {
+   "rule": "method",
+   "code": "private void ensureEnoughBuffer ( int newcount ) { if ( newcount > buf . length ) { byte newbuf [ ] = new byte [ Math . max ( buf . length < < 1 , newcount ) ] "
+  },
+  {
+   "rule": "class",
+   "code": "public final class DataByteArrayOutputStream extends OutputStream implements DataOutput { private static final int DEFAULT_SIZE = 2048 ; private byte buf [ ] ; "
+  },
+  {
+   "rule": "class",
+   "code": "public class TarUtils { private static final int BYTE_MASK = 255 ; public static long parseOctal ( byte [ ] header , int offset , int length ) { long result = 0"
+  },
+  {
+   "rule": "class",
+   "code": "public final class DataByteArrayInputStream extends InputStream implements DataInput { private byte [ ] buf ; private int pos ; private int offset ; private int"
+  },
+  {
+   "rule": "class",
+   "code": "public class DataByteArrayOutputStream extends OutputStream implements DataOutput { private static final int DEFAULT_SIZE = PageFile . DEFAULT_PAGE_SIZE ; prote"
+  },
+  {
+   "rule": "class",
+   "code": "static class ResourceSerializer { final RangerPolicy . RangerPolicyResource _policyResource ; ResourceSerializer ( RangerPolicy . RangerPolicyResource policyRes"
+  },
+  {
+   "rule": "class",
+   "code": "private static class getWorkflow_resultTupleScheme extends TupleScheme < getWorkflow_result > { @ Override public void write ( org . apache . thrift . protocol "
+  }
+ ],
+ "rule_level_of_failed": {
+  "class": 796,
+  "method": 52
+ }
+}
